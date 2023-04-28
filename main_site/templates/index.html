@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock %}
 
 {% block content %}
@@ -12,41 +13,28 @@
                 <figure class="rasp_puffs">
                     <a href="#" data-lightbox="homepage"
                                 data-title="Raspberry Cream Puffs">
-                        <picture>
-                            <source srcset="#"
-                                    media="(min-width:1024px)">
-                            <img src="#" alt="raspberry cream puffs decorated with white chocolate">
-                        </picture>
+                        <img src="{% static 'images/home1.jpg' %}" alt="raspberry cream puffs">
                     </a>
                 </figure>
                 <figure class="tollhouse">
                     <a href="#" data-lightbox="homepage"
                                 data-title="Tollhouse Chocolate Chip Cookies">
-                        <picture>
-                            <source srcset="#"
-                                    media="(min-width:1024px)">
-                            <img src="#" alt="tollhouse chocolate chip cookies">
-                        </picture>
+                        <img src="{% static 'images/home2.jpg' %}" alt="tollhouse chocolate chip cookies">
                     </a>
                 </figure>
             </div>
         </div>
         <aside class="wrap_item">
             <p>
-                        Looking for a Valentine's Day treat? Try our hand-decorated
-                        sugar cookies! Supplies may be limited, so
-                        <a href="#" class="text_link">call us</a>
-                        to ask about availability and place your order.
+                Looking for a Valentine's Day treat? Try our hand-decorated
+                sugar cookies! Supplies may be limited, so
+                <a href="#" class="text_link">call us</a>
+                to ask about availability and place your order.
             </p>
             <figure>
                 <a href="#" data-lightbox="homepage"
                    data-title="Decorated Valentine's Cookies">
-                    <!--picture>
-                                <source srcset="images/wide_valentine_cookies.jpg"
-                                media="(min-width:1024px)">
-                                <img src="images/valentine_cookies.j#pg" alt="decorated valentine cookies">
-                            </picture-->
-
+                    <img src="{% static 'images/seasonal.jpg' %}" alt="Seasonal item">
                 </a>
             </figure>
         </aside>
