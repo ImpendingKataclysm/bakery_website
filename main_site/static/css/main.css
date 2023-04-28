@@ -1,0 +1,32 @@
+/* General styles for all pages */
+body {
+    font-family: "Calibri", sans-serif;
+    background-image: linear-gradient(to bottom, rgb(134, 114, 98), rgb(178, 155, 129));
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.7rem rgb(88, 72, 56);
+    margin: 0;
+}
+
+header, footer, nav, main {
+    width: 100%;
+}
+
+header, footer {
+    background-image: linear-gradient(to bottom, rgb(57, 48, 38), rgb(95, 78, 61));
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    gap: 0.5rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+.subtitle {
+    font-size: 1.9rem;
+    font-style: italic;
+}

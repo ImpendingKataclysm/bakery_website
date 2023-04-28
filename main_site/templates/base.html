@@ -2,79 +2,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Best Bakery: Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="#">
-    </head>
-    <body>
-        <div id="main_wrap">
-            <header>
-                <h1>
-                    <a href="/main_site/static"><img src="{% static 'images/logo.png' %}" alt="bakery logo"></a>
-                    Best Bakery <br>
-                    <span class="subtitle">
-                        Est. 1988
-                    </span>
-                </h1>
-                <div class="nav_btn button" tabindex="0">
-                    <p>Menu</p>
-                </div>
-            </header>
-            <nav>
-                <ul>
-                    <li class="current_page">
-                        Home
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Daily Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                {% block content %}{% endblock %}
-            </main>
-            <footer>
-                <section>
-                    <h2>About Us</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Our Products</h2>
-                    <ul>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Daily Features</a></li>
-                    </ul>
-                </section>
-                <address>
-                    123 Fake St. <br>
-                    City, Province VVV 555 <br>
-                    (555) 555-5555 <br>
-                    citybakery@example.com
-                </address>
-            </footer>
+    <div id="main_wrap">
+        <header>
+            <div>
+                <a href="/main_site/static"><img src="{% static 'images/logo.png' %}" alt="bakery logo"></a>
+            </div>
+            <div>
+                <h1>Best Bakery</h1>
+                <p class="subtitle">Est. 1988 </p>
+            </div>
+        </header>
+        <div id="nav-btn" class="button" tabindex="0">
+            <p>Menu</p>
         </div>
+        <nav>
+            <ul>
+                <li class="current_page">
+                    Home
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Daily Features</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <section>
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Our Products</h2>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Daily Features</a></li>
+                </ul>
+            </section>
+            <address>
+                123 Fake St. <br>
+                City, Province VVV 555 <br>
+                (555) 555-5555 <br>
+                citybakery@example.com
+            </address>
+        </footer>
+    </div>
 
         <script src="#"></script>
         <script src="#"></script>
