@@ -1,140 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Best Bakery: Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="#">
-    </head>
-    <body>
-        <div id="main_wrap">
-            <header>
-                <h1>
-                    <a href="#">
-                        <!--picture>
-                            <source srcset="images/apple_pie.png"
-                            media="(max-width: 1023px)">
-                            <source srcset="images/large_logo.png"
-                            media="(min-width: 1024px)">
-                            <img src="images/apple_pie.png" alt="apple pie logo">
-                        </picture-->
-                    </a>
-                    Best Bakery <br>
-                    <span class="subtitle">
-                        Est. 1988
-                    </span>
-                </h1>
-                <div class="nav_btn button" tabindex="0">
-                    <p>Menu</p>
-                </div>
-            </header>
-            <nav>
-                <ul>
-                    <li class="current_page">
-                        Home
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Daily Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#" class="covid_page">Covid-19 Info</a>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <header>
-                    <h2>Home</h2>
-                </header>
-                <div class="wrapper">
-                    <div class="wrap_item home_text">
-                        <p>{% lorem %}</p>
-                        <div class="wrapper">
-                                <figure class="rasp_puffs">
-                                    <a href="#" data-lightbox="homepage"
-                                    data-title="Raspberry Cream Puffs">
-                                        <picture>
-                                            <source srcset="#"
-                                            media="(min-width:1024px)">
-                                            <img src="#" alt="raspberry
-                                            cream puffs decorated with white chocolate">
-                                        </picture>
-                                    </a>
-                                </figure>
-                                <figure class="tollhouse">
-                                    <a href="#" data-lightbox="homepage"
-                                    data-title="Tollhouse Chocolate Chip Cookies">
-                                        <picture>
-                                            <source srcset="#"
-                                            media="(min-width:1024px)">
-                                            <img src="#" alt="tollhouse
-                                            chocolate chip cookies">
-                                        </picture>
-                                    </a>
-                                </figure>
-                            </div>
-                    </div>
-                    <aside class="wrap_item">
-                        <p>
-                            Looking for a Valentine's Day treat? Try our hand-decorated
-                            sugar cookies! Supplies may be limited, so
-                            <a href="#" class="text_link">call us</a>
-                            to ask about availability and place your order.
-                        </p>
-                        <figure>
-                            <a href="#" data-lightbox="homepage"
-                            data-title="Decorated Valentine's Cookies">
-                                <!--picture>
-                                    <source srcset="images/wide_valentine_cookies.jpg"
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <header>
+        <h2>Home</h2>
+    </header>
+    <div class="wrapper">
+        <div class="wrap_item home_text">
+            <p>{% lorem %}</p>
+            <div class="wrapper">
+                <figure class="rasp_puffs">
+                    <a href="#" data-lightbox="homepage"
+                                data-title="Raspberry Cream Puffs">
+                        <picture>
+                            <source srcset="#"
                                     media="(min-width:1024px)">
-                                    <img src="images/valentine_cookies.j#pg" alt="decorated valentine cookies">
-                                </picture-->
-
-                            </a>
-                        </figure>
-                    </aside>
-                </div>
-            </main>
-            <footer>
-                <section>
-                    <h2>About Us</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Our Products</h2>
-                    <ul>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Daily Features</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Covid-19 Procedures</h2>
-                    <ul>
-                        <li><a href="#">Covid Rules</a></li>
-                    </ul>
-                </section>
-                <address>
-                    123 Fake St. <br>
-                    City, Province VVV 555 <br>
-                    (555) 555-5555 <br>
-                    citybakery@example.com
-                </address>
-            </footer>
+                            <img src="#" alt="raspberry cream puffs decorated with white chocolate">
+                        </picture>
+                    </a>
+                </figure>
+                <figure class="tollhouse">
+                    <a href="#" data-lightbox="homepage"
+                                data-title="Tollhouse Chocolate Chip Cookies">
+                        <picture>
+                            <source srcset="#"
+                                    media="(min-width:1024px)">
+                            <img src="#" alt="tollhouse chocolate chip cookies">
+                        </picture>
+                    </a>
+                </figure>
+            </div>
         </div>
+        <aside class="wrap_item">
+            <p>
+                        Looking for a Valentine's Day treat? Try our hand-decorated
+                        sugar cookies! Supplies may be limited, so
+                        <a href="#" class="text_link">call us</a>
+                        to ask about availability and place your order.
+            </p>
+            <figure>
+                <a href="#" data-lightbox="homepage"
+                   data-title="Decorated Valentine's Cookies">
+                    <!--picture>
+                                <source srcset="images/wide_valentine_cookies.jpg"
+                                media="(min-width:1024px)">
+                                <img src="images/valentine_cookies.j#pg" alt="decorated valentine cookies">
+                            </picture-->
 
-        <script src="#"></script>
-        <script src="#"></script>
-    </body>
-</html>
+                </a>
+            </figure>
+        </aside>
+    </div>
+{% endblock %}
