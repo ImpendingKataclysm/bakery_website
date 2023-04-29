@@ -175,3 +175,27 @@ figure {
 .seasonal_item {
     background-image: linear-gradient(to bottom, rgb(198, 108, 130), rgb(202, 130, 145));
 }
+
+/* Lists */
+.styled_list {
+    padding-left: 2rem;
+}
+
+.styled_list li {
+    list-style-image: url("../images/list-icon.png");
+    line-height: 1.5;
+}
+
+/* Sitemap Footer */
+footer h2 {
+    font-size: 1.1rem;
+}
+
+footer a:link, footer a:visited {
+    text-decoration: none;
+    color: rgb(255, 109, 145);
+}
+
+footer a:hover, footer a:focus {
+    color: #ffffff;
+}
