@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Best Bakery - Contact{% endblock %}
+
+{% block content %}
+    <header>
+        <h2>Contact Us</h2>
+    </header>
+    <div class="wrapper">
+        <section class="location">
+            <h3>Location</h3>
+            <ul>
+                <li class="contact_item">
+                    <strong>Address</strong>: 123 Fake St. City, Province
+                </li>
+                <li class="contact_item">
+                    <strong>Phone</strong>: (555) 555-5555
+                </li>
+            </ul>
+            <div class="map_wrap">
+                <iframe src="https://www.google.com/maps/embed"></iframe>
+            </div>
+        </section>
+        <section>
+            <h3>Hours of Operation</h3>
+            <ul>
+                <li><strong>Tuesday - Saturday</strong>: 8am - 6pm</li>
+                <li><strong>Sunday & Monday</strong>: Closed</li>
+                <li>Closed on statutory holidays.</li>
+            </ul>
+        </section>
+        <aside class="comments">
+            <h3>We Want To Hear From You</h3>
+            <p>
+                Please leave any questions or comments below.  If
+                you would like a response, please leave
+                your email.
+            </p>
+            <form action="#">
+                <div class="input_wrap">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="input_wrap">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input_wrap comment_box">
+                    <label for="feedback">Comments: </label>
+                    <textarea id="feedback" name="feedback"></textarea>
+                </div>
+                <div class="input_wrap">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </aside>
+        <figure class="contact_img">
+            <img src="#" alt="apple pastries">
+        </figure>
+    </div>
+{% endblock %}

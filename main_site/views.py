@@ -15,3 +15,11 @@ def about(request):
     :return: HTTP response used to render the about page in the browser
     """
     return render(request, "about.html")
+
+
+def contact(request):
+    """
+    :param request: HTTP request to render the contact page
+    :return: HTTP response used to render the contact page in the browser
+    """
+    return render(request, "contact.html")
