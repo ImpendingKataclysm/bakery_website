@@ -25,6 +25,10 @@ p {
     padding: 1rem;
 }
 
+section {
+    padding: 0.5rem;
+}
+
 aside {
     border-radius: 1.2rem;
 }
