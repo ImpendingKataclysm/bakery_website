@@ -31,6 +31,7 @@ section {
 
 aside {
     border-radius: 1.2rem;
+    padding: 1rem;
 }
 
 #main_wrap {
@@ -162,6 +163,12 @@ figure {
     box-shadow: 0.1rem 0.1rem 0.1rem -0.1rem rgb(88,72,56);
 }
 
+.map_wrap {
+    padding: 0.5rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+
 /* Links */
 .text_link {
     color:rgb(255, 167, 167);
@@ -178,6 +185,55 @@ figure {
 /* Seasonal item for home page */
 .seasonal_item {
     background-image: linear-gradient(to bottom, rgb(198, 108, 130), rgb(202, 130, 145));
+}
+
+/* Forms */
+form {
+    padding: 1rem;
+}
+
+label {
+    line-height: 1.5;
+    margin-right: 0.5rem;
+}
+
+input, textarea {
+    margin-bottom: 0.2rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 5px solid rgb(144, 145, 144);
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    min-height: 20vh;
+}
+
+input[type="submit"] {
+    padding: 1rem;
+    border-radius: 1.2rem;
+    background-color: rgb(188, 92, 113);
+    color: #ffffff;
+    box-shadow: inset -5px -5px 7px rgb(46, 9, 17),
+                inset 5px 5px 7px rgb(245, 208, 216);
+}
+
+input[type="submit"]:active {
+    box-shadow: inset 5px 5px 7px rgb(46, 9, 17),
+                inset -5px -5px 7px rgb(245, 208, 216);
+}
+
+.comments {
+    background-image: linear-gradient(to bottom, rgb(109, 38, 38), rgb(150, 69, 69));
+}
+
+.input_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 /* Lists */
