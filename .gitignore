@@ -161,3 +161,4 @@ cython_debug/
 /main_site/admin.py
 /main_site/tests.py
 /main_site/migrations/__init__.py
+/main_site/migrations/0001_initial.py
