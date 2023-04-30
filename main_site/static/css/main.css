@@ -107,13 +107,19 @@ nav a:link, nav a:visited {
 
 nav a:hover, nav a:focus {
     background-color: #fff;
-    color: rgb(208, 170, 172);
+    color: rgb(242, 134, 167);
     text-shadow: none;
 }
 
 nav a:active {
     background-color: rgb(245, 131, 131);
     color: #ffffff;
+}
+
+.nav_wrap {
+    position: sticky;
+    top: 3rem;
+
 }
 
 /* Buttons */
