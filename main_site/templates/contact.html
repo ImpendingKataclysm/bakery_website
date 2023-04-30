@@ -55,6 +55,15 @@
                     <input type="submit" value="Send">
                 </div>
             </form>
+            {% if messages %}
+                <ul>
+                   <div>
+                   {% for message in messages %}
+                        <li>{{ message }}</li>
+                   {% endfor %}
+                   </div>
+                </ul>
+            {% endif %}
         </aside>
         <figure class="contact_img">
             <img class="display-img" src="{% static 'images/contact1.jpg' %}" alt="croissants">

@@ -6,6 +6,7 @@ from datetime import datetime
 
 from .forms import SendEmailForm
 from .models import Email
+from .functions import handle_validation_error
 
 
 def home(request):
@@ -53,6 +54,6 @@ def contact(request):
             success_message = f"Thanks for reaching out, {sender_name.title()}!"
             messages.success(request, success_message)
         else:
-            print(form.errors)
+            handle_validation_error(request)
 
     return render(request, "contact.html")
