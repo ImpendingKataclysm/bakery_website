@@ -19,6 +19,7 @@ def home(request):
 
 def about(request):
     """
+    Displays the about page
     :param request: HTTP request to render the about page
     :return: HTTP response used to render the about page in the browser
     """
@@ -27,6 +28,7 @@ def about(request):
 
 def contact(request):
     """
+    Displays the contact page and collects the data entered by the user into the contact form
     :param request: HTTP request to render the contact page
     :return: HTTP response used to render the contact page in the browser
     """
@@ -57,3 +59,12 @@ def contact(request):
             handle_validation_error(request)
 
     return render(request, "contact.html")
+
+
+def products(request):
+    """
+    Displays the product page
+    :param request: HTTP request
+    :return:HTTP response
+    """
+    return render(request, "products.html")

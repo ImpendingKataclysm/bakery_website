@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Best Bakery - Products{% endblock %}
+
+{% block content %}
+    <header id="top">
+        <h2>Our Products</h2>
+        <p>
+            <a href="/contact" class="text_link">
+                Ask us
+            </a> about product availability and consider ordering ahead of time</p>
+        <div class="button sidenav_btn" tabindex="0">
+            <p>See Categories</p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <nav class="sidenav">
+            <ul>
+                <li><a href="#bread">Bread</a></li>
+                <li><a href="#pastries">Assorted Pastries</a></li>
+                <li><a href="#pies">Pies</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#cookies">Cookies</a></li>
+                <li><a href="#muffins">Muffins</a></li>
+                <li><a href="#savoury">Savoury</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+            <section id="bread" class="product wide">
+                <h3 class="product_heading">Bread</h3>
+                <p class="product_text">{% lorem %}</p>
+                <figure>
+                    <img src="#" alt="Finnish rye bread">
+                </figure>
+            </section>
+            <section id="pastries" class="product wide">
+                <h3 class="product_heading">Assorted Pastries</h3>
+                <p class="product_text">{% lorem %}</p>
+                <figure>
+                    <img src="#" alt="cream puffs">
+                </figure>
+            </section>
+            <section id="pies" class="product wide">
+                <h3 class="product_heading">Pies</h3>
+                <p class="product_text">{% lorem %}</p>
+                <figure>
+                    <img src="#" alt="apple pie">
+                </figure>
+            </section>
+            <section id="cakes" class="product wide">
+                <h3 class="product_heading">Cakes</h3>
+                <p class="product_text">{% lorem %}</p>
+                <figure>
+                    <img src="#" alt="mocha cake">
+                </figure>
+            </section>
+            <section id="cookies" class="product wide">
+                <h3 class="product_heading">Cookies</h3>
+                <p class="product_text">{% lorem %}</p>
+                <figure>
+                    <img src="#"  alt="gingerbread man">
+                </figure>
+            </section>
+            <section id="muffins" class="product wide">
+                <h3 class="product_heading">Muffins</h3>
+                <p class="product_text">{% lorem %} </p>
+                <figure>
+                    <img src="#" alt="muffins">
+                </figure>
+            </section>
+            <section id="savoury" class="product wide">
+                <h3 class="product_heading">Savoury</h3>
+                <p class="product_text">{% lorem %}</p>
+                <figure>
+                    <img src="#" alt="sausage rolls">
+                </figure>
+            </section>
+    </div>
+{% endblock %}

@@ -91,10 +91,6 @@ nav li {
     text-align: center;
 }
 
-.current_page {
-    background-color: rgb(251, 235, 235);
-}
-
 nav a:link, .current_page {
     display: block;
     width: 100%;
@@ -105,7 +101,7 @@ nav a:link, .current_page {
 }
 
 nav a:link, nav a:visited {
-    background-color: rgb(208, 170, 172);
+    background-color: rgb(242, 134, 167);
     color: #fff;
 }
 
