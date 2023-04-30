@@ -260,3 +260,30 @@ footer a:hover, footer a:focus {
     color: #ffffff;
 }
 
+/* Success and error messages for form submission */
+ul.response_message {
+    list-style-type: none;
+    width: 30%;
+    height: 15%;
+    padding: 0.8rem;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+
+.response_message li {
+    line-height: 1.5;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem #1b1b1b;
+}
+
+.response_message .success {
+    background-image: linear-gradient(to bottom, #634c4c, #9b6464);
+}
+
+.response_message .error {
+    background-image: linear-gradient(to bottom, #f20505, #f73b3b);
+}
