@@ -62,6 +62,11 @@
                         class="{{ message.tags }}"
                     {% endif %} >
                         {{ message }}
+                    {% if message.tags == 'success' %}
+                        <a class="response_btn" href="/">Home</a>
+                    {% elif message.tags == 'error' %}
+                        <a class="response_btn" href="/contact">Try again</a>
+                    {% endif %}
                     </li>
                {% endfor %}
                 </ul>

@@ -263,13 +263,13 @@ footer a:hover, footer a:focus {
 /* Success and error messages for form submission */
 ul.response_message {
     list-style-type: none;
-    width: 30%;
+    width: 40%;
     height: 15%;
     padding: 0.8rem;
     text-align: center;
     position: fixed;
     top: 30%;
-    left: 30%;
+    left: 25%;
 }
 
 .response_message li {
@@ -286,4 +286,23 @@ ul.response_message {
 
 .response_message .error {
     background-image: linear-gradient(to bottom, #f20505, #f73b3b);
+}
+
+.response_btn {
+    display: block;
+    cursor: pointer;
+    background: #482323;
+    padding: 0.8rem;
+    width: 50%;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.response_btn:link, .response_btn:visited {
+    color: white;
+}
+
+.response_btn:hover, .response_btn:active {
+    color: #9b6464;
 }
