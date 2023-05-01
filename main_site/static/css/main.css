@@ -29,11 +29,6 @@ section {
     padding: 0.5rem;
 }
 
-aside {
-    border-radius: 1.2rem;
-    padding: 1rem;
-}
-
 #main_wrap {
     display:flex;
     flex-direction: column;
@@ -194,6 +189,7 @@ figure {
 /* Forms */
 form {
     padding: 1rem;
+    font-size: 1.3rem;
 }
 
 label {
@@ -216,7 +212,7 @@ textarea {
     min-height: 20vh;
 }
 
-input[type="submit"] {
+.submit-btn {
     padding: 1rem;
     border-radius: 1.2rem;
     background-color: rgb(188, 92, 113);
@@ -225,48 +221,35 @@ input[type="submit"] {
                 inset 5px 5px 7px rgb(245, 208, 216);
 }
 
-input[type="submit"]:active {
+.submit-btn {
     box-shadow: inset 5px 5px 7px rgb(46, 9, 17),
                 inset -5px -5px 7px rgb(245, 208, 216);
 }
 
 .card {
+    border-radius: 1.2rem;
+    padding: 1rem;
     background-image: linear-gradient(to bottom, rgb(109, 38, 38), rgb(150, 69, 69));
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem auto;
+    padding: 0.2rem;
+    width: 75%;
 }
 
 .input_wrap {
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+    flex-direction: column;
+    width: 80%;
+    margin: 0.5rem auto;
 }
 
-/* Lists */
-.styled_list {
-    padding-left: 2rem;
-}
-
-.styled_list li {
-    list-style-image: url("../images/list-icon.png");
-    line-height: 1.5;
-}
-
-/* Sitemap Footer */
-footer h2 {
-    font-size: 1.1rem;
-}
-
-footer a:link, footer a:visited {
-    text-decoration: none;
-    color: rgb(255, 109, 145);
-}
-
-footer a:hover, footer a:focus {
-    color: #ffffff;
-}
-
-.site_map {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#employment_status div {
+    padding: 0.6rem;
 }
 
 /* Success and error messages for form submission */
@@ -314,4 +297,33 @@ ul.response_message {
 
 .response_btn:hover, .response_btn:active {
     color: #9b6464;
+}
+
+/* Lists */
+.styled_list {
+    padding-left: 2rem;
+}
+
+.styled_list li {
+    list-style-image: url("../images/list-icon.png");
+    line-height: 1.5;
+}
+
+/* Sitemap Footer */
+footer h2 {
+    font-size: 1.1rem;
+}
+
+footer a:link, footer a:visited {
+    text-decoration: none;
+    color: rgb(255, 109, 145);
+}
+
+footer a:hover, footer a:focus {
+    color: #ffffff;
+}
+
+.site_map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
