@@ -53,7 +53,9 @@
                 <label for="resume">Upload your resume: </label>
                 <input type="file" id="resume" name="resume">
             </div>
-            <button type="submit" class="submit-btn">Send Application</button>
+            <div class="input_wrap">
+                <button type="submit" class="submit-btn">Send Application</button>
+            </div>
             {% if messages %}
                 <ul class="response_message">
                {% for message in messages %}

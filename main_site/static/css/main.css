@@ -153,7 +153,8 @@ nav a:active {
 /* Images */
 figure {
     margin: 1rem auto;
-    padding: 0.5rem
+    padding: 0.5rem;
+    width: 80%;
 }
 
 .display-img {
@@ -161,6 +162,7 @@ figure {
     box-shadow: 0.1rem 0.1rem 0.1rem -0.1rem rgb(88,72,56);
     display: block;
     margin: 0 auto;
+    width: 100%;
 }
 
 .map_wrap {
@@ -326,4 +328,50 @@ footer a:hover, footer a:focus {
 .site_map {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+/* Responsive layouts for larger screen sizes*/
+@media screen and (min-width: 760px){
+    /* General Layouts */
+    h2, h3{
+        text-align: center;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    .wrap_item {
+        padding: 0.5rem;
+    }
+
+    /* Products Page */
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    /* Forms */
+    .card {
+        width: 65%;
+        margin: auto;
+    }
+
+    .input_wrap {
+        width: 50%;
+    }
+
+    /* Contact page */
+
+
+
+    /* Footer and site map*/
+    .site_map {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    address {
+        padding: 0.5rem;
+    }
 }

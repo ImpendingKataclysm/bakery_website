@@ -7,27 +7,30 @@
     <header>
         <h2>About Us</h2>
     </header>
-    <div class="wrapper">
-        <section class="wrap_item about_main">
+    <div>
+        <section class="about_main">
             <h2>Lorem ipsum dolor!</h2>
-            <figure>
-                <img class="display-img" src="{% static 'images/about1.jpg' %}" alt="Bakery storefront">
-            </figure>
-            <p>{% lorem %}</p>
+            <div class="wrapper">
+                <figure class="wrap_item">
+                    <img class="display-img" src="{% static 'images/about1.jpg' %}" alt="Bakery storefront">
+                </figure>
+                <p class="wrap_item">{% lorem %}</p>
+            </div>
         </section>
         <section class="wrap_item about_item">
-            <h3>Massa dolor</h3>
-            <p>{% lorem %}</p>
-            <figure>
-                <img class="display-img" src="{% static 'images/about2.jpg' %}" alt="chocolate eclair">
-            </figure>
-            <p>{% lorem %}</p>
+            <header><h3>Massa dolor</h3></header>
+            <div class="wrapper">
+                <figure class="wrap_item">
+                    <img class="display-img" src="{% static 'images/about2.jpg' %}" alt="chocolate eclair">
+                </figure>
+                <p class="wrap_item">{% lorem %}</p>
+            </div>
         </section>
-        <div class="wrap_item about_imgs">
-            <figure>
+        <div class="wrapper about_imgs">
+            <figure class="wrap_item">
                 <img class="display-img" src="{% static 'images/about3.jpg' %}" alt="cinnamon buns with icing">
             </figure>
-            <figure>
+            <figure class="wrap_item">
                 <img class="display-img" src="{% static 'images/about4.jpg' %}" alt="cupcake">
             </figure>
         </div>
