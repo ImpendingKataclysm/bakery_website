@@ -68,3 +68,12 @@ def products(request):
     :return:HTTP response
     """
     return render(request, "products.html")
+
+
+def jobs(request):
+    """
+    Displays the job application page and accepts user applications and resume uploads
+    :param request: HTTP request
+    :return: HTTP response
+    """
+    return render(request, "jobs.html")

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Best Bakery - Jobs{% endblock %}
+
+{% block content %}
+    <header>
+        <h2>Contact Us</h2>
+    </header>
+    <p>Start your application today:</p>
+    <div class="card">
+        <form method="post" enctype="multipart/form-data" class="input-form">
+            {% csrf_token %}
+            <div class="form-row">
+                <label for="first_name">First Name: </label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-row">
+                <label for="last_name">Last Name: </label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="start_date">Available Start Date: </label>
+                <input type="date" id="start_date" name="start_date" required>
+            </div>
+            <div class="form-row">
+                <label for="employment_status">Current Employment Status: </label>
+                <br>
+                <div id="employment_status">
+                    <div>
+                        <input type="radio" id="employed" value="employed" name="employment_status" required>
+                        <label for="employed">Employed</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="unemployed" value="unemployed" name="employment_status" required>
+                        <label for="unemployed">Unemployed</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="self-employed" value="self-employed" name="employment_status" required>
+                        <label for="self-employed">Self-Employed</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="student" value="student" name="employment_status" required>
+                        <label for="student">Student</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="resume">Upload your resume: </label>
+                <input type="file" id="resume" name="resume">
+            </div>
+            <button type="submit" class="submit-btn">Send Application</button>
+            {% if messages %}
+                    <ul class="messages">
+                        <div class="response_message">
+                        {% for message in messages %}
+                            <li {% if message.tags %}class="card {{ message.tags }}"{% endif %}>
+                                {{ message }}
+                                {% if message.tags == 'success'%}
+                                    <a class="response-btn" href="/">Home</a>
+                                {% elif message.tags == 'error' %}
+                                    <a class="response-btn" href="/careers">Try again</a>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        </div>
+                    </ul>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}
