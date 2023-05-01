@@ -255,7 +255,7 @@ textarea {
 /* Success and error messages for form submission */
 ul.response_message {
     list-style-type: none;
-    width: 40%;
+    width: 50%;
     height: 15%;
     padding: 0.8rem;
     text-align: center;

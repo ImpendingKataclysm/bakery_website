@@ -6,7 +6,7 @@ from datetime import datetime
 
 from .forms import SendEmailForm, ApplicationForm
 from .models import Email, JobApplicant
-from .functions import handle_validation_error
+from .functions import handle_validation_error, send_email
 
 
 def home(request):
@@ -48,10 +48,7 @@ def contact(request):
             # Confirmation email not implemented at this time
             # No app password configured
             email_subject = f"Message received from {sender_name} ({sender_email})"
-            email_message = EmailMessage(subject=email_subject,
-                                         body=message,
-                                         to=[settings.EMAIL_HOST_USER])
-            # email_message.send()
+            # send_email(email_subject, message, settings.EMAIL_HOST_USER)
 
             success_message = f"Thanks for reaching out, {sender_name.title()}!"
             messages.success(request, success_message)
@@ -98,7 +95,20 @@ def jobs(request):
             with open(f'main_site/static/resumes/{date_applied}_{last_name}_{first_name}', 'wb+') as dest:
                 for chunk in resume.chunks():
                     dest.write(chunk)
+
+            email_subject = "Job Application"
+            message = f"""
+            To: {first_name} {last_name}
+            
+            Thank you for your job application.
+            We will be in touch soon.
+            """
+
+            # send_email(email_subject, message, email)
+
+            success_message = f"Thank you for your application, {first_name} {last_name}."
+            messages.success(request, success_message)
         else:
-            print(form.errors)
+            handle_validation_error(request)
 
     return render(request, "jobs.html")
