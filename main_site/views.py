@@ -4,8 +4,8 @@ from django.conf import settings
 from django.contrib import messages
 from datetime import datetime
 
-from .forms import SendEmailForm
-from .models import Email
+from .forms import SendEmailForm, ApplicationForm
+from .models import Email, JobApplicant
 from .functions import handle_validation_error
 
 
@@ -76,4 +76,25 @@ def jobs(request):
     :param request: HTTP request
     :return: HTTP response
     """
+    if request.method == 'POST':
+        form = ApplicationForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            first_name = form.cleaned_data["first_name"]
+            last_name = form.cleaned_data["last_name"]
+            email = form.cleaned_data["email"]
+            date_applied = datetime.now()
+            date_available = form.cleaned_data["start_date"]
+            employment_status = form.cleaned_data["employment_status"]
+            resume = request.FILES['resume']
+
+            JobApplicant.objects.create(first_name=first_name,
+                                        last_name=last_name,
+                                        email=email,
+                                        date_applied=date_applied,
+                                        date_available=date_available,
+                                        employment_status=employment_status)
+        else:
+            print(form.errors)
+
     return render(request, "jobs.html")

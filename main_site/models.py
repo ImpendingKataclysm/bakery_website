@@ -5,7 +5,7 @@ MAX_FIELD_LEN = 80
 
 class Email(models.Model):
     """
-    Database table for emails received from the public
+    Emails received from the public
     """
     sender_name = models.CharField(max_length=MAX_FIELD_LEN)
     sender_email = models.EmailField()
@@ -14,3 +14,18 @@ class Email(models.Model):
 
     def __str__(self):
         return f"From {self.sender_name} ({self.sender_email}) on {self.date_sent}: {self.message}"
+
+
+class JobApplicant(models.Model):
+    """
+    Job applications received online
+    """
+    first_name = models.CharField(max_length=MAX_FIELD_LEN)
+    last_name = models.CharField(max_length=MAX_FIELD_LEN)
+    email = models.EmailField(null=True)
+    date_applied = models.DateTimeField()
+    date_available = models.DateTimeField()
+    employment_status = models.CharField(max_length=MAX_FIELD_LEN)
+
+    def __str__(self):
+        return f"{self.last_name}, {self.first_name}"
