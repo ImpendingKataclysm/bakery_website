@@ -83,7 +83,7 @@ def jobs(request):
             first_name = form.cleaned_data["first_name"]
             last_name = form.cleaned_data["last_name"]
             email = form.cleaned_data["email"]
-            date_applied = datetime.now()
+            date_applied = datetime.now().strftime("%Y-%m-%d")
             date_available = form.cleaned_data["start_date"]
             employment_status = form.cleaned_data["employment_status"]
             resume = request.FILES['resume']
@@ -94,6 +94,10 @@ def jobs(request):
                                         date_applied=date_applied,
                                         date_available=date_available,
                                         employment_status=employment_status)
+
+            with open(f'main_site/static/resumes/{date_applied}_{last_name}_{first_name}', 'wb+') as dest:
+                for chunk in resume.chunks():
+                    dest.write(chunk)
         else:
             print(form.errors)
 
