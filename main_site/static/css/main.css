@@ -264,6 +264,11 @@ footer a:hover, footer a:focus {
     color: #ffffff;
 }
 
+.site_map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /* Success and error messages for form submission */
 ul.response_message {
     list-style-type: none;
