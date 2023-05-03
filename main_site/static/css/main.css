@@ -395,6 +395,23 @@ footer a:hover, footer a:focus {
         width: 100%;
     }
 
+    .sidenav {
+        display: block;
+    }
+
+    .sidenav ul {
+        display: flex;
+    }
+
+    .sidenav-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    #side_nav_btn {
+        display: none;
+    }
+
     /* Footer and site map*/
     .site_map {
         grid-template-columns: 1fr 1fr 1fr;
