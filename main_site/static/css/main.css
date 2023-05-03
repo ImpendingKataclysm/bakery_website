@@ -395,11 +395,13 @@ footer a:hover, footer a:focus {
         width: 100%;
     }
 
-    .sidenav {
+    /* Nav Menu */
+
+    nav {
         display: block;
     }
 
-    .sidenav ul {
+    nav ul {
         display: flex;
     }
 
@@ -408,7 +410,7 @@ footer a:hover, footer a:focus {
         padding: 0;
     }
 
-    #side_nav_btn {
+    .nav_btn {
         display: none;
     }
 
