@@ -43,10 +43,11 @@ section {
 
 h1 {
     font-size: 1.8rem;
+    margin-left: 0.4rem;
+;
 }
 
 .subtitle {
-    font-size: 0.9rem;
     font-style: italic;
 }
 
@@ -311,6 +312,11 @@ ul.response_message {
     line-height: 1.5;
 }
 
+/* Products page */
+.product_heading {
+    text-align: center;
+}
+
 /* Sitemap Footer */
 footer h2 {
     font-size: 1.1rem;
@@ -331,16 +337,20 @@ footer a:hover, footer a:focus {
 }
 
 /* Responsive layouts for larger screen sizes*/
-@media screen and (min-width: 760px){
+@media screen and (min-width: 840px){
     /* General Layouts */
-    h2, h3{
-        text-align: center;
-    }
-
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
+    }
+
+    .left {
+        grid-column: 1;
+    }
+
+    .right {
+        grid-column: 2;
     }
 
     .wrap_item {
@@ -350,6 +360,14 @@ footer a:hover, footer a:focus {
     /* Products Page */
     .products {
         grid-template-columns: 1fr;
+    }
+
+    .product figure {
+        width: 100%;
+    }
+
+    .product .left {
+        grid-row: 1;
     }
 
     /* Forms */
