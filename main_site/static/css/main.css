@@ -372,8 +372,8 @@ footer a:hover, footer a:focus {
 
     /* Forms */
     .card {
-        width: 65%;
-        margin: auto;
+        width: 50%;
+        margin: 0.5rem auto;
     }
 
     .input_wrap {
@@ -387,8 +387,7 @@ footer a:hover, footer a:focus {
     }
 
     .comments.card {
-        width: 80%;
-        margin-right: 0;
+        width: 90%;
     }
 
     .comments form {
