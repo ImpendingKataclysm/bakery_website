@@ -37,7 +37,7 @@
                 you would like a response, please leave
                 your email.
             </p>
-            <form method="post">
+            <form method="post" class="input_form">
                 {% csrf_token %}
                 <div class="input_wrap">
                     <label for="sender_name">Name: </label>
@@ -72,8 +72,5 @@
                 </ul>
             {% endif %}
         </aside>
-        <figure class="contact_img">
-            <img class="display-img" src="{% static 'images/contact1.jpg' %}" alt="croissants">
-        </figure>
     </div>
 {% endblock %}

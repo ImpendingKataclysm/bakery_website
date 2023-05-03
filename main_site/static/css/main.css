@@ -359,12 +359,23 @@ footer a:hover, footer a:focus {
     }
 
     .input_wrap {
-        width: 50%;
+        margin: 0.3rem;
     }
 
     /* Contact page */
+    .comments {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
 
+    .comments.card {
+        width: 80%;
+        margin-right: 0;
+    }
 
+    .comments form {
+        width: 100%;
+    }
 
     /* Footer and site map*/
     .site_map {
