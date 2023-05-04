@@ -1,7 +1,7 @@
 /* General styles for all pages */
 body {
     font-family: "Calibri", sans-serif;
-    background-image: linear-gradient(to bottom, rgb(134, 114, 98), rgb(178, 155, 129));
+    background-image: linear-gradient(to bottom, #996633, #b48556);
     color: #fff;
     text-shadow: 0.2rem 0.2rem 0.7rem rgb(88, 72, 56);
     margin: 0;
@@ -13,7 +13,7 @@ header, footer, nav, main {
 }
 
 header, footer {
-    background-image: linear-gradient(to bottom, rgb(57, 48, 38), rgb(95, 78, 61));
+    background-image: linear-gradient(to bottom, #3f2303, #7B3F00);
     margin: 0;
 }
 
