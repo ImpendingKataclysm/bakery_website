@@ -10,29 +10,35 @@
     <div>
         <section class="about_main">
             <h2>Lorem ipsum dolor!</h2>
-            <div class="wrapper">
-                <figure class="wrap_item">
+            <div class="wrapper about_wrap">
+                <div class="wrap_item about_text">
+                    <p>{% lorem %}</p>
+                    <p>{% lorem %}</p>
+                    <p>{% lorem %}</p>
+                </div>
+                <div class="about_img">
+                    <figure class="wrap_item">
                     <img class="display-img" src="{% static 'images/about1.jpg' %}" alt="Bakery storefront">
                 </figure>
-                <p class="wrap_item">{% lorem %}</p>
+                <figure class="wrap_item">
+                        <img class="display-img" src="{% static 'images/about3.jpg' %}" alt="cinnamon buns with icing">
+                    </figure>
+                    <figure class="wrap_item">
+                        <img class="display-img" src="{% static 'images/about4.jpg' %}" alt="cupcake">
+                    </figure>
+                </div>
             </div>
         </section>
         <section class="wrap_item about_item">
             <header><h3>Massa dolor</h3></header>
-            <div class="wrapper">
-                <figure class="wrap_item">
+            <div class="wrapper about_wrap">
+                <figure class="wrap_item about_img">
                     <img class="display-img" src="{% static 'images/about2.jpg' %}" alt="chocolate eclair">
                 </figure>
-                <p class="wrap_item">{% lorem %}</p>
+                <div class="wrap_item about_text">
+                    <p>{% lorem %}</p>
+                </div>
             </div>
         </section>
-        <div class="wrapper about_imgs">
-            <figure class="wrap_item">
-                <img class="display-img" src="{% static 'images/about3.jpg' %}" alt="cinnamon buns with icing">
-            </figure>
-            <figure class="wrap_item">
-                <img class="display-img" src="{% static 'images/about4.jpg' %}" alt="cupcake">
-            </figure>
-        </div>
     </div>
 {% endblock %}

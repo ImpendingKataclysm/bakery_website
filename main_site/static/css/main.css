@@ -444,12 +444,24 @@ footer a:hover, footer a:focus {
     }
 
     /* Home Page Layouts */
-    .wrapper.home_wrap {
+    .wrapper.home_wrap, .wrapper.about_wrap {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .home_text {
+    .home_text, .about_text {
         grid-column: 1 / span 2;
+    }
+
+    .about_text {
+        grid-row: 1;
+    }
+
+    .about_img {
+        grid-column: 3;
+    }
+
+    .about_img .display-img {
+        width: 75%;
     }
 
     /* Image sizes */
