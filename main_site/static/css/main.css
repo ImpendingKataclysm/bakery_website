@@ -423,3 +423,33 @@ footer a:hover, footer a:focus {
         padding: 0.5rem;
     }
 }
+
+@media screen and (min-width: 1020px) {
+    /*General Layouts*/
+    main header {
+        padding: 1.5rem;
+    }
+
+    h2, .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .wrapper {
+        margin: auto;
+    }
+
+    /* Home Page Layouts */
+    .wrapper.home_wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .home_text {
+        grid-column: 1 / span 2;
+    }
+
+    /* Image sizes */
+    .display-img {
+        max-width: 20rem;
+    }
+}
