@@ -430,9 +430,13 @@ footer a:hover, footer a:focus {
         padding: 1.5rem;
     }
 
-    h2, .wrapper {
+    h2, h3, .wrapper {
         width: 80%;
         margin: auto;
+    }
+
+    figure {
+        width: 100%;
     }
 
     .wrapper {
@@ -449,7 +453,7 @@ footer a:hover, footer a:focus {
     }
 
     /* Image sizes */
-    .display-img {
-        max-width: 20rem;
+    .seasonal_item .display-img {
+        max-width: 90%;
     }
 }
