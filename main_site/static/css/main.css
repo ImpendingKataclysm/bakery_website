@@ -447,6 +447,12 @@ footer a:hover, footer a:focus {
         margin: auto;
     }
 
+    /* Site Map */
+    .site_map, address {
+        width: 55%;
+        margin: auto;
+    }
+
     /* Home Page Layouts */
     .wrapper.home_wrap, .wrapper.about_wrap {
         grid-template-columns: 1fr 1fr 1fr;
