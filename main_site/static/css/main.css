@@ -8,12 +8,16 @@ body {
     width: 100%;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 header, footer, nav, main {
     width: 100%;
 }
 
 header, footer {
-    background-image: linear-gradient(to bottom, #3f2303, #7B3F00);
+    background-image: linear-gradient(to bottom, #391e01, #663300);
     margin: 0;
 }
 
