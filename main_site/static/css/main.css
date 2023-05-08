@@ -449,9 +449,13 @@ footer a:hover, footer a:focus {
     }
 
     /* Site Map */
-    .site_map, address {
-        width: 55%;
-        margin: auto;
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    address {
+        text-align: right;
     }
 
     /* Home Page */
