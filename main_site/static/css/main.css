@@ -431,10 +431,6 @@ footer a:hover, footer a:focus {
 
 @media screen and (min-width: 1020px) {
     /*General Layouts*/
-    main header {
-        padding: 1.5rem;
-    }
-
     h2, h3, .wrapper {
         width: 80%;
         margin: auto;
@@ -493,6 +489,35 @@ footer a:hover, footer a:focus {
         display: block;
         width: 100%;
         min-height: 20rem;
+    }
+
+    /* Products Page */
+    .product_grid {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+    }
+
+    .nav_wrap {
+        align-self: start;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: #1b1b1b;
+    }
+
+    .sidenav ul {
+        height: 100vh;
+        display: block;
+        background: #EEA0A6;
+    }
+
+    .sidenav li {
+        display: block;
+        margin: 0;
+    }
+
+    a.sidenav-item:link, a.sidenav-item:visited {
+        background: none;
     }
 
     /* Image sizes */
