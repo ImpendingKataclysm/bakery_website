@@ -466,16 +466,19 @@ footer a:hover, footer a:focus {
     }
 
     /* Home Page */
-    .wrapper.home_wrap, .wrapper.about_wrap {
+    .wrapper.home_wrap{
+        width: 100%;
+        grid-template-columns: 1fr 30%;
+    }
+
+
+    /* About Page */
+    .wrapper.about_wrap {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .home_text, .about_text {
-        grid-column: 1 / span 2;
-    }
-
-    /* About Page */
     .about_text {
+        grid-column: 1 / span 2;
         grid-row: 1;
     }
 
