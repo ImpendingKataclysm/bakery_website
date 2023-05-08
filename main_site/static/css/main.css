@@ -3,7 +3,7 @@ body {
     font-family: "Calibri", sans-serif;
     background-image: linear-gradient(to bottom, #996633, #b48556);
     color: #fff;
-    text-shadow: 0.2rem 0.2rem 0.7rem rgb(88, 72, 56);
+    text-shadow: 0.2rem 0.2rem 0.7rem #391e01;
     margin: 0;
     width: 100%;
 }
@@ -56,7 +56,7 @@ h1 {
 }
 
 main header {
-    background-image: linear-gradient(to bottom, rgb(184, 107, 126), rgb(237, 155, 175));
+    background-image: linear-gradient(to bottom, #D47186, #F4C3C4);
     padding: 0.5rem;
 }
 
@@ -103,7 +103,7 @@ nav a:link, .current_page {
 }
 
 nav a:link, nav a:visited {
-    background-color: rgb(242, 134, 167);
+    background-color: #EEA0A6;
     color: #fff;
 }
 
@@ -224,21 +224,22 @@ textarea {
 .submit-btn {
     padding: 1rem;
     border-radius: 1.2rem;
-    background-color: rgb(188, 92, 113);
+    background-color: #D47186;
     color: #ffffff;
-    box-shadow: inset -5px -5px 7px rgb(46, 9, 17),
-                inset 5px 5px 7px rgb(245, 208, 216);
+    box-shadow: inset -5px -5px 7px #59212c,
+                inset 5px 5px 7px #f49cae;
 }
 
-.submit-btn {
-    box-shadow: inset 5px 5px 7px rgb(46, 9, 17),
-                inset -5px -5px 7px rgb(245, 208, 216);
+input {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 0.2rem 0.2rem 0.7rem #391e01;
 }
 
 .card {
     border-radius: 1.2rem;
     padding: 1rem;
-    background-image: linear-gradient(to bottom, rgb(109, 38, 38), rgb(150, 69, 69));
+    background-image: linear-gradient(to bottom, #84172C, #9A173F);
 }
 
 .input_form {
