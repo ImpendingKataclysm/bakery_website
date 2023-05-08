@@ -454,7 +454,7 @@ footer a:hover, footer a:focus {
         margin: auto;
     }
 
-    /* Home Page Layouts */
+    /* Home Page */
     .wrapper.home_wrap, .wrapper.about_wrap {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -463,6 +463,7 @@ footer a:hover, footer a:focus {
         grid-column: 1 / span 2;
     }
 
+    /* About Page */
     .about_text {
         grid-row: 1;
     }
@@ -473,6 +474,21 @@ footer a:hover, footer a:focus {
 
     .about_img .display-img {
         width: 75%;
+    }
+
+    /* Contact Page */
+    .contact_grid {
+        grid-template-columns: 60% 1fr;
+    }
+
+    .contact_grid h3 {
+        text-align: left;
+    }
+
+    .map_wrap iframe {
+        display: block;
+        width: 100%;
+        min-height: 20rem;
     }
 
     /* Image sizes */
