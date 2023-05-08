@@ -118,10 +118,13 @@ nav a:active {
     color: #ffffff;
 }
 
+.sidenav a:link, .sidenav a:visited {
+    background: #84172C;
+}
+
 .nav_wrap {
     position: sticky;
     top: 3rem;
-
 }
 
 /* Buttons */
@@ -431,6 +434,14 @@ footer a:hover, footer a:focus {
 
 @media screen and (min-width: 1020px) {
     /*General Layouts*/
+    main header {
+        padding: 1.5rem;
+    }
+
+    main .subtitle {
+        text-align: center;
+    }
+
     h2, h3, .wrapper {
         width: 80%;
         margin: auto;
@@ -508,7 +519,7 @@ footer a:hover, footer a:focus {
     .sidenav ul {
         height: 100vh;
         display: block;
-        background: #EEA0A6;
+        background: #84172C;
     }
 
     .sidenav li {
@@ -518,6 +529,15 @@ footer a:hover, footer a:focus {
 
     a.sidenav-item:link, a.sidenav-item:visited {
         background: none;
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .product .wrapper {
+        width: 90%;
+        gap: 2.5rem;
     }
 
     /* Image sizes */
