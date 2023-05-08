@@ -7,7 +7,7 @@
     <header>
         <h2>Join Our Team</h2>
     </header>
-    <div class="card">
+    <div class="card job_form">
         <p>We're always looking for talented individuals to join our team! Apply now:</p>
         <form method="post" enctype="multipart/form-data" class="input-form">
             {% csrf_token %}
@@ -54,7 +54,7 @@
                 <input type="file" id="resume" name="resume">
             </div>
             <div class="input_wrap">
-                <button type="submit" class="submit-btn">Send Application</button>
+               <input type="submit" value="Send Application" class="submit-btn">
             </div>
             {% if messages %}
                 <ul class="response_message">

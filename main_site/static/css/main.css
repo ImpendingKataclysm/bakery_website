@@ -540,6 +540,16 @@ footer a:hover, footer a:focus {
         gap: 2.5rem;
     }
 
+    /* Jobs Page */
+    .job_form {
+        width: 40%;
+    }
+
+    .job_form form {
+        width: 80%;
+        margin: auto;
+    }
+
     /* Image sizes */
     .seasonal_item .display-img {
         max-width: 90%;
