@@ -92,7 +92,7 @@ def jobs(request):
                                         date_available=date_available,
                                         employment_status=employment_status)
 
-            with open(f'main_site/static/resumes/{date_applied}_{last_name}_{first_name}', 'wb+') as dest:
+            with open(f'main_site/static/resumes/{date_applied}_{last_name}_{first_name}.pdf', 'wb+') as dest:
                 for chunk in resume.chunks():
                     dest.write(chunk)
 
