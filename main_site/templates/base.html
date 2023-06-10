@@ -9,35 +9,39 @@
 </head>
 <body>
     <div id="main_wrap">
-        <header class="main_header">
-            <div>
-                <a href="/"><img src="{% static 'images/logo.png' %}" alt="bakery logo"></a>
+        <header>
+            <div class="main_header">
+                <div>
+                    <a href="/"><img src="{% static 'images/logo.png' %}" alt="bakery logo"></a>
+                </div>
+                <div>
+                    <h1>Best Bakery</h1>
+                    <p class="subtitle">Est. 1988 </p>
+                </div>
+                <div id="nav-btn" class="nav_btn" tabindex="0">
+                    <img src="{% static 'images/nav_icon.png' %}" alt="nav menu icon">
+                </div>
             </div>
-            <div>
-                <h1>Best Bakery</h1>
-                <p class="subtitle">Est. 1988 </p>
-            </div>
+            <nav id="main_nav">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/products">Products</a>
+                    </li>
+                    <li>
+                        <a href="/jobs">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <div id="nav-btn" class="button nav_btn" tabindex="0">Menu</div>
-        <nav id="main_nav">
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/about">About</a>
-                </li>
-                <li>
-                    <a href="/products">Products</a>
-                </li>
-                <li>
-                    <a href="/jobs">Jobs</a>
-                </li>
-                <li>
-                    <a href="/contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
         <main>
             {% block content %}{% endblock %}
         </main>

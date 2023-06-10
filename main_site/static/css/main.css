@@ -12,6 +12,18 @@ h2, h3 {
     text-align: center;
 }
 
+.nav_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 3.5rem;
+}
+
+.nav_btn img {
+    width: 100%;
+}
+
 header, footer, nav, main {
     width: 100%;
 }
@@ -43,6 +55,7 @@ section {
 .main_header {
     display: flex;
     gap: 0.5rem;
+    position: relative;
 }
 
 h1 {
@@ -58,6 +71,7 @@ h1 {
 main header {
     background-image: linear-gradient(to bottom, #D47186, #F4C3C4);
     padding: 0.5rem;
+    z-index: -1;
 }
 
 h2 {
@@ -151,12 +165,6 @@ nav a:active {
     box-shadow: inset 10px 10px 10px rgba(5, 0, 0, 0.2),
     inset -10px -10px 10px rgba(255, 255, 255, 0.2);
     text-shadow: none;
-}
-
-.nav_btn {
-    height: 3rem;
-    width: 30%;
-    line-height: 2.5;
 }
 
 /* Images */
